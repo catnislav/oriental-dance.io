@@ -1,0 +1,570 @@
+@charset "utf-8";
+
+/* Start reset.css */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, main {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End reset.css */
+
+/* Start fonts */
+
+@font-face {
+	font-family: "LatoRegular";
+	src: url("../fonts/LatoRegular/LatoRegular.eot");
+	src: url("../fonts/LatoRegular/LatoRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/LatoRegular/LatoRegular.woff") format("woff"),
+	url("../fonts/LatoRegular/LatoRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "OlgaCTT";
+	src: url("../fonts/OlgaCTT/OlgaCTT.eot");
+	src: url("../fonts/OlgaCTT/OlgaCTT.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/OlgaCTT/OlgaCTT.woff") format("woff"),
+	url("../fonts/OlgaCTT/OlgaCTT.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+/* End fonts */
+
+*, *:before, *:after {
+	box-sizing: border-box;
+	outline: none;
+}
+
+html, body,
+.page-wrapper, .page {
+	width: 100%;
+	height: 100%;
+}
+
+.page-wrapper, .inner-wrapper {
+	margin: 0 auto;
+}
+
+.page-wrapper {
+	overflow: auto;
+}
+.page {
+	 -webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	 -ms-flex-flow: column nowrap;
+	     flex-flow: column nowrap;
+	font: 16px/24px 'LatoRegular', sans-serif;
+	background: #fff;
+	color: #333;
+	min-height: 100vh;
+}
+.inner-wrapper {
+	width: 1000px;
+}
+
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.active {
+	color: #5d1956;
+}
+.link {
+	color: #5d1956;
+	box-shadow: inset 0 -1px #5d1956;
+}
+.link:hover,
+.link:focus {
+	color: #b85482;
+	box-shadow: inset 0 0 #b85482;
+}
+
+::-moz-selection {
+	background: #d66a83;
+	color: #fff;
+}
+::selection {
+	background: #d66a83;
+	color: #fff;
+}
+
+.page,
+nav ul,
+footer .social,
+.modal-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display:        flex;
+}
+
+/* Start header */
+
+header {
+	z-index: 1;
+	position: relative;
+	background: transparent;
+	min-width: 1000px;
+}
+
+header:before {
+	content: '';
+	background: #fff;
+	width: 100%;
+	min-width: 1000px;
+	height: 591px;
+	position: absolute;
+	top: 0;
+	z-index: -1;
+}
+
+header #head-back {
+	width: 100%;
+	min-width: 1000px;
+	height: 591px;
+	position: absolute;
+	top: 0;
+	overflow: hidden;
+	z-index: -1;
+}
+header #head-back img,
+header #head-back canvas {
+	min-width: 1920px;
+	min-height: 591px;
+	width: auto;
+	height: auto;
+	position: absolute;
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	left: 50%;
+}
+
+header a {
+	font-size: 24px;
+	line-height: 24px;
+	padding: 4px 8px;
+	color: #fff;
+	border-radius: 5px;
+}
+header a:hover,
+header a:focus {
+	background: #fff;
+	color: #d66a83;
+	opacity: 0.5;
+}
+
+nav ul{
+	-webkit-box-orient: horizontal;
+	 -webkit-box-direction: normal;
+	       -ms-flex-flow: row wrap;
+	           flex-flow: row wrap;
+	     -webkit-box-pack: justify;
+	        -ms-flex-pack: justify;
+	justify-content: space-between;
+	padding-top: 36px;
+}
+
+/* End header */
+
+/* Start main*/
+
+main {
+	width: 100%;
+	min-width: 1000px;
+	z-index: 2;
+	-webkit-box-flex: 1;
+	 -ms-flex: 1 0 auto;
+	     flex: 1 0 auto;
+	background: -webkit-linear-gradient(top, #fff, #ebc6ff 100%);
+	background:      linear-gradient(180deg, #fff, #ebc6ff 100%);
+	margin: 541px 0 91px;
+}
+
+main .inner-wrapper > h3 {
+	font: 48px/48px 'OlgaCTT', arial;
+	color: #5d1956;
+	text-align: center;
+	margin-bottom: 48px;
+}
+
+/*Start form*/
+
+form {
+	width: 230px;
+	height: 328px;
+	position: relative;
+	margin: 48px auto;
+	text-align: center;
+}
+form label {
+	text-transform: uppercase;
+	color: #5d1956;
+	cursor: pointer;
+}
+form label + [type="text"] {
+	margin-top: 24px;
+}
+form [type="text"] {
+	height: 42px;
+	margin-bottom: 8px;
+	text-overflow: ellipsis;
+}
+form textarea {
+	height: 130px;
+	resize: none;
+	overflow: auto;
+}
+form textarea:focus + [type="submit"] {
+	opacity: 0.5;
+}
+
+form [type="submit"] {
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
+	width: 40px;
+	height: 30px;
+	position: absolute;
+	right: 6px;
+	bottom: 6px;
+	background: #5d1956;
+	cursor: pointer;
+	font-size: 20px;
+	line-height: 32px;
+	color: #fff;
+	text-align: center;
+	padding: 0px 10px;
+}
+
+form [type="submit"]:hover,
+form [type="submit"]:focus {
+	background: #b85482;
+}
+form [type="submit"]:active {
+	background: #d66a83;
+}
+form [type="text"],
+form textarea {
+	width: 230px;
+	background: rgba(93,25,86,.3);
+	padding: 14px 30px;
+}
+form [type="text"],
+form textarea,
+form [type="submit"] {
+	font-family: "LatoRegular", sans-serif;
+	border: none;
+	border-radius: 5px;
+}
+
+::-webkit-input-placeholder {
+	font: 14px/14px sans-serif;
+	color: #5d1956;
+	-webkit-transition: all .6s ease;
+	        transition: all .6s ease;
+}
+::-moz-placeholder {
+	font: 14px/14px sans-serif;
+	color: #5d1956;
+	-webkit-transition: all .6s ease;
+	        transition: all .6s ease;
+}
+:-ms-input-placeholder {
+	font: 14px/14px sans-serif;
+	color: #5d1956;
+	-webkit-transition: all .6s ease;
+	        transition: all .6s ease;
+}
+::placeholder {
+	font: 14px/14px sans-serif;
+	color: #5d1956;
+	-webkit-transition: all .6s ease;
+	        transition: all .6s ease;
+}
+
+:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+:focus::-moz-placeholder {
+	color: transparent;
+}
+:focus:-ms-input-placeholder {
+	color: transparent;
+}
+:focus::placeholder {
+	color: transparent;
+}
+
+#result {
+	margin-top: 24px;
+	text-transform: uppercase;
+	color: #5d1956;
+	text-align: center;
+}
+#preloader {
+	width: 20px;
+	height: 20px;
+}
+
+/* End form */
+
+/* End main*/
+
+/* Start footer */
+
+footer {
+	z-index: 1;
+	position: relative;
+	min-width: 1000px;
+	background: transparent;
+}
+
+footer:before {
+	content: '';
+	background: #ebc6ff;
+	width: 100%;
+	min-width: 1000px;
+	height: 301px;
+	position: absolute;
+	bottom: 0;
+	z-index: -1;
+}
+
+footer .foot-back {
+	width: 100%;
+	min-width: 1000px;
+	height: 301px;
+	position: absolute;
+	top: -92px;
+	overflow: hidden;
+	z-index: -1;
+}
+footer .foot-back img {
+	min-width: 1920px;
+	min-height: 301px;
+	width: auto;
+	height: auto;
+	position: absolute;
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	left: 50%;
+}
+
+footer address {
+	text-align: center;
+	color: #5d1956;
+	width: 50%;
+	margin: 0 auto;
+	font-size: 24px;
+	line-height: 36px;
+}
+footer address h3 {
+	text-transform: uppercase;
+	margin-bottom: 36px;
+}
+footer address a {
+	color: #d66a83;
+}
+
+footer .social {
+	-webkit-justify-content: space-around;
+	            -ms-flex-pack: distribute;
+	        justify-content: space-around;
+	width: 300px;
+	margin: 0 auto;
+	padding-bottom: 36px;
+}
+
+footer .social a {
+	width: 36px;
+	height: 28px;
+	display: block;
+	padding: 4px 0;
+	border-radius: 5px;
+}
+footer .social a:hover,
+footer .social a:focus {
+	background: #fff;
+	opacity: 0.5;
+}
+
+footer .social div,
+footer .social span {
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin: 0 auto;
+}
+footer .social div {
+	background: url(../images/social.png) left top no-repeat;
+}
+footer .social span {
+	background: url(../images/social-hover.png) left top no-repeat;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: opacity .6s ease;
+	        transition: opacity .6s ease;
+}
+footer .social a:hover span,
+footer .social a:focus span {
+	visibility: visible;
+	opacity: 1;
+}
+
+.social .fb {
+	background-position: 0 0;
+}
+.social a:hover .fb-h,
+.social a:focus .fb-h {
+	background-position: 0 0;
+}
+
+.social .vk {
+	background-position: -22px 0;
+	width: 40px;
+}
+.social a:hover .vk-h,
+.social a:focus .vk-h {
+	background-position: -22px 0;
+	width: 40px;
+}
+
+.social .ok {
+	background-position: -60px 0;
+}
+.social a:hover .ok-h,
+.social a:focus .ok-h {
+	background-position: -60px 0;
+}
+
+.social .yt {
+	background-position: -80.51px 0;
+	width: 40px;
+}
+.social a:hover .yt-h,
+.social a:focus .yt-h {
+	background-position: -82px 0;
+	width: 40px;
+}
+
+/* End footer */
+
+/* Start modal-window */
+
+.overlay {
+	z-index: 99;
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.5);
+	cursor: default;
+	overflow: auto;
+}
+.modal-wrapper {
+	position: relative;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	min-width: 1000px;
+	min-height: 100vh;
+	padding: 81px 0;
+}
+.modal {
+	position: relative;
+	max-width: 1880px;
+	min-width: 760px;
+	width: 76%;
+	padding: 20px;
+	margin: auto;
+	background: -webkit-linear-gradient(top, #fff, #ebc6ff 100%);
+	background:      linear-gradient(180deg, #fff, #ebc6ff 100%);
+	text-align: center;
+	word-wrap: break-word;
+	border-radius: 5px;
+	box-shadow: 0 0 20px #fff;
+	color: #333;
+	font: 16px/24px 'LatoRegular', sans-serif;
+	z-index: 100;
+}
+
+.close {
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 2px;
+	right: 0;
+	cursor: pointer;
+}
+.close:after {
+	content: '\2716';
+	font-size: 20px;
+	text-align: center;
+	text-decoration: none;
+	color: #5d1956;
+}
+.close:hover:after,
+.close:focus:after {
+	color: #b85482;
+}
+
+.modal p {
+	text-align: left;
+}
+
+/* End modal-window */
+
+.preloader,
+a,
+[type="submit"],
+footer .social a img,
+.close:after {
+	-webkit-transition: all .6s ease;
+          transition: all .6s ease;
+}

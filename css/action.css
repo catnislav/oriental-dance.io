@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+/* Start main */
+main .inner-wrapper,
+.action section {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display:        flex;
+}
+
+main .inner-wrapper {
+	 -webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	 -ms-flex-flow: column nowrap;
+	     flex-flow: column nowrap;
+}
+
+/* Start article */
+
+.modal ul {
+	list-style: url('../images/list.png') inside;
+}
+
+.action {
+	margin-bottom: 48px;
+}
+
+.action section {
+	-webkit-box-orient: horizontal;
+	 -webkit-box-direction: normal;
+	       -ms-flex-flow: row wrap;
+	           flex-flow: row wrap;
+	    -ms-flex-pack: distribute;
+	justify-content: space-around;
+	-webkit-box-align: top;
+	   -ms-flex-align: top;
+	      align-items: top;
+}
+.action section a {
+	display: block;
+	width: 33.33%;
+	padding: 20px 0;
+	border-radius: 5px;
+}
+.action section figure {
+	position: relative;
+	margin: 0 auto;
+}
+.action section figure img {
+	height: 200px;
+	margin: 0 auto;
+	display: block;
+}
+
+.action section figure figcaption {
+	margin-top: 20px;
+	text-align: center;
+}
+.action section figure figcaption,
+.modal h4 {
+	font: 32px/32px 'OlgaCTT', arial;
+	color:  #5d1956;
+}
+.action section a:hover figure figcaption,
+.action section a:focus figure figcaption {
+	color: #b85482;
+}
+
+.action section a:hover,
+.action section a:focus {
+	background: #fff;
+	box-shadow: 0 0 30px 15px #fff;
+}
+
+.action section figure figcaption {
+	-webkit-transition: all .6s ease;
+	        transition: all .6s ease;
+}
+
+/* End article */
+
+/* End main */
+
+/* Start modal-window */
+
+.modal h4 {
+	font-size: 32px;
+	line-height: 32px;
+}
+
+.modal img {
+	display: block;
+	margin: 24px auto;
+	height: 300px;
+}
+
+.modal ul {
+	text-align: left;
+}
+.modal span {
+	color: #b85482;
+}
+
+/* End modal-window */

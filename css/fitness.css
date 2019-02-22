@@ -1,0 +1,56 @@
+main .inner-wrapper ul {
+	font: 24px/24px arial, helvetica, sans-serif;
+	text-align: center;
+}
+main .inner-wrapper ul li {
+	margin: 100px 0;
+}
+main .inner-wrapper ul a {
+	color: #5d1956;
+	-webkit-transition: all .6s ease;
+	transition: all .6s ease;
+}
+main .inner-wrapper ul a:hover {
+	color: #b85482;
+}
+
+main .center-wrapper {
+	position: relative;
+}
+
+main .inner-wrapper > img:nth-of-type(1){
+	width: 525px;
+}
+main .inner-wrapper > img:nth-of-type(2){
+	width: 475px;
+	position: relative;
+	top: 100px;
+}
+main .center-wrapper img:nth-of-type(1){
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 300px;
+}
+main .center-wrapper img:nth-of-type(2){
+	position: absolute;
+	bottom: -50px;
+	left: 0;
+	width: 250px;
+}
+main .inner-wrapper > img:nth-of-type(3){
+	width: 450px;
+}
+main .inner-wrapper > img:nth-of-type(4){
+	width: 550px;
+	position: relative;
+	bottom: 150px;
+}
+
+
+
+.modal h4 {
+  font: 36px/36px arial, helvetica, sans-serif;
+  color: #5d1956;
+  margin-bottom: 24px;
+}
